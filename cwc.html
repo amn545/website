@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header{
+            background: #ff00a5;
+            width: 100%;
+            height: 75px;
+            color: #fff;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .matches a{
+            color: #fff;
+            font-weight: 800;
+            font-family: serif;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .fixture{
+            background: #3528a8;
+            color: #fff;
+            font-size: 1.4rem;
+            padding: 15px;
+        }
+
+        .standings a{
+            color: #fff;
+            font-weight: 800;
+            font-family: serif;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .venue a{
+            color: #fff;
+            font-weight: 800;
+            font-family: serif;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .trophy-tour a{
+            color: #fff;
+            font-weight: 800;
+            font-family: serif;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .video a{
+            color: white;
+            text-decoration: none;
+            font-weight: 18px;
+            font-weight: 900;
+         }
+
+         .oct{
+            font-size: 30px;
+            color: #ff00a5;
+            padding: 40px;
+         }
+
+         fieldset{
+            border: 0.01px solid rgb(194, 190, 190);
+            padding: 15px;
+         }
+
+         p{
+            color: #320073;
+            font-size: 21px;
+            padding: 4px;
+         }
+
+         h3{
+            color: #320073;
+            font-size: 25px;
+         }
+
+         h3 c{
+            color: #9ea2ae;
+            font-size: 17px;
+            font-weight: 700;
+         }
+
+         M{
+            color: #320073;
+            font-size: 15px;
+            font-weight: 600;
+            
+         }
+
+         .thu{
+            font-size: 20px;
+            padding-top: 10px;
+         }
+
+         h1{
+            color: #320073;
+            font-size: 25px;
+            padding-top: 25px;
+         }
+
+        h1 img{
+            width: 40px;
+            height: 30px;
+         }
+
+         h2{
+            background: linear-gradient(skyblue, skyblue);
+            text-align: center;
+            color: #fff;
+         }
+
+         .tour{
+            text-decoration: underline;
+         }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="matches">
+        <a href="warm-up.html">WARM-UPS</a>
+        </div>
+
+        <div class="matches tour">
+        <a href="cwc.html">TOURNAMENTS</a>
+        </div>
+
+        <div class="video">
+            <i class="fa-brands fa-youtube"></i>
+            <a href="video.html">VIDEO</a>
+        </div>
+
+        <div class="standings">
+            <a href="standings.html">STANDINGS</a>
+        </div>
+
+        <div class="venue">
+            <a href="venue.html">VENUE</a>
+        </div>
+
+        <div class="trophy-tour">
+            <a href="top.html">TOP MOMENTS</a>
+        </div>
+
+        </div>
+
+    <div class="fixture">
+        <h1 style="color: white;">MEN'S CWC23 FIXTURES</h1>
+    </div>
+
+    <div class="oct">
+        <h1 style="color: #ff00a5;">OCTOBER <D style="color: #320073;">2023</D></h1>
+    </div>
+
+    <fieldset>
+        <fieldset class="field">
+            <p>Thrusday 05 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>Narendra Modi Stadium, Ahmedabad</M>
+            <h3 class="thu">14:00 <c>THU O5 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAFVBMVEX////OESTMAAXtuLvuvL/NABbhhYsTXF4iAAABiUlEQVR4nO3asQ3DMBAEQVqk1H/JdgcTPgTvVHDY+Naata8PXHt44rQSUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRHSc6Exv3KPOcyvR/ZzZjeuaxUK/RsMTlyf+uxJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkRdsKgjH01fLd9wBx3WqZhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiFyT6AlXQRZ39U6PdAAAAAElFTkSuQmCC" alt=""> ENGLAND</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/NZ_flag_design_Silver_Fern_%28Black%2C_White_%26_Blue%29_by_Kyle_Lockwood.svg/180px-NZ_flag_design_Silver_Fern_%28Black%2C_White_%26_Blue%29_by_Kyle_Lockwood.svg.png" alt=""> NEW ZEALAND</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Friday 06 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>Rajiv Gandhi International Stadium, Hyderabad</M>
+            <h3 class="thu">14:00 <c>FRI O6 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/255px-Flag_of_Pakistan.svg.png" alt=""> PAKISTAN</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/255px-Flag_of_the_Netherlands.svg.png" alt=""> NETHERLANDS</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Saturday 07 October</p>
+            <h3>10:30 <c>(YOUR TIME)</c> </h3>
+            <M>HPCA Stadium, Dharamsala</M>
+            <h3 class="thu">10:30 <c>SAT O7 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/255px-Flag_of_Bangladesh.svg.png" alt=""> BANGLADESH</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg/150px-Flag_of_Afghanistan_%282013%E2%80%932021%29.svg.png" alt=""> AFGHANISTAN</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Saturday 07 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>Arun Jaitley Stadium, Delhi</M>
+            <h3 class="thu">14:00 <c>SAT O7 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/255px-Flag_of_South_Africa.svg.png" alt=""> SOUTH AFRICA</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/255px-Flag_of_Sri_Lanka.svg.png" alt=""> SRI LANKA</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Sunday 08 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>MA Chidambaram Stadium, Chennai</M>
+            <h3 class="thu">14:00 <c>SUN O8 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/255px-Flag_of_India.svg.png" alt=""> INDIA</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/255px-Flag_of_Australia_%28converted%29.svg.png" alt=""> AUSTRALIA</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Monday 09 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>Rajiv Gandhi International Stadium, Hyderabad</M>
+            <h3 class="thu">14:00 <c>MON O9 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/NZ_flag_design_Silver_Fern_%28Black%2C_White_%26_Blue%29_by_Kyle_Lockwood.svg/180px-NZ_flag_design_Silver_Fern_%28Black%2C_White_%26_Blue%29_by_Kyle_Lockwood.svg.png" alt=""> NEW ZEALAND</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/255px-Flag_of_the_Netherlands.svg.png" alt=""> NETHERLANDS</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Tuesday 10 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>HPCA Stadium, Dharamsala</M>
+            <h3 class="thu">14:00 <c>TUE 10 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAFVBMVEX////OESTMAAXtuLvuvL/NABbhhYsTXF4iAAABiUlEQVR4nO3asQ3DMBAEQVqk1H/JdgcTPgTvVHDY+Naata8PXHt44rQSUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRHSc6Exv3KPOcyvR/ZzZjeuaxUK/RsMTlyf+uxJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkRdsKgjH01fLd9wBx3WqZhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiFyT6AlXQRZ39U6PdAAAAAElFTkSuQmCC" alt=""> ENGLAND</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/255px-Flag_of_Bangladesh.svg.png" alt=""> BANGLADESH</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Tuesday 10 October</p>
+            <h3>10:30 <c>(YOUR TIME)</c> </h3>
+            <M>Rajiv Gandhi International Stadium, Hyderabad</M>
+            <h3 class="thu">14:00 <c>TUE 10 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/255px-Flag_of_Pakistan.svg.png" alt=""> PAKISTAN</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/255px-Flag_of_Sri_Lanka.svg.png" alt=""> SRI LANKA</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Wednesday 11 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>Arun Jaitley Stadium, Delhi</M>
+            <h3 class="thu">14:00 <c>WED 11 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/255px-Flag_of_India.svg.png" alt=""> INDIA</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg/150px-Flag_of_Afghanistan_%282013%E2%80%932021%29.svg.png" alt=""> AFGHANISTAN</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Thrusday 12 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>Ekana Cricket Stadium, Lucknow</M>
+            <h3 class="thu">14:00 <c>THU 12 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/255px-Flag_of_Australia_%28converted%29.svg.png" alt=""> AUSTRALIA</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/255px-Flag_of_South_Africa.svg.png" alt=""> SOUTH AFRICA</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Friday 13 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>MA Chidambaram Stadium, Chennai</M>
+            <h3 class="thu">14:00 <c>FRI 13 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/NZ_flag_design_Silver_Fern_%28Black%2C_White_%26_Blue%29_by_Kyle_Lockwood.svg/180px-NZ_flag_design_Silver_Fern_%28Black%2C_White_%26_Blue%29_by_Kyle_Lockwood.svg.png" alt=""> NEW ZEALAND</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/255px-Flag_of_Bangladesh.svg.png" alt=""> BANGLADESH</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Saturday 14 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>Narendra Modi Stadium, Ahmedabad</M>
+            <h3 class="thu">14:00 <c>SAT 14 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/255px-Flag_of_India.svg.png" alt=""> INDIA</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/255px-Flag_of_Pakistan.svg.png" alt=""> PAKISTAN</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Sunday 15 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>Arun Jaitley Stadium, Delhi</M>
+            <h3 class="thu">14:00 <c>SUN 15 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAFVBMVEX////OESTMAAXtuLvuvL/NABbhhYsTXF4iAAABiUlEQVR4nO3asQ3DMBAEQVqk1H/JdgcTPgTvVHDY+Naata8PXHt44rQSUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRHSc6Exv3KPOcyvR/ZzZjeuaxUK/RsMTlyf+uxJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkRdsKgjH01fLd9wBx3WqZhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiFyT6AlXQRZ39U6PdAAAAAElFTkSuQmCC" alt=""> ENGLAND</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg/150px-Flag_of_Afghanistan_%282013%E2%80%932021%29.svg.png" alt=""> AFGHANISTAN</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Monday 16 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>Ekana Cricket Stadium</M>
+            <h3 class="thu">14:00 <c>MON 16 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/255px-Flag_of_Australia_%28converted%29.svg.png" alt=""> AUSTRALIA</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/255px-Flag_of_Sri_Lanka.svg.png" alt=""> SRI LANKA</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Tuesday 17 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>HPCA Stadium, Dharamsala</M>
+            <h3 class="thu">14:00 <c>TUE 17 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/255px-Flag_of_South_Africa.svg.png" alt=""> SOUTH AFRICA</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/255px-Flag_of_the_Netherlands.svg.png" alt=""> NETHERLANDS</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Wednesday 18 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>MA Chidambaram Stadium, Chennai</M>
+            <h3 class="thu">14:00 <c>WED 18 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/NZ_flag_design_Silver_Fern_%28Black%2C_White_%26_Blue%29_by_Kyle_Lockwood.svg/180px-NZ_flag_design_Silver_Fern_%28Black%2C_White_%26_Blue%29_by_Kyle_Lockwood.svg.png" alt=""> NEW ZEALAND</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg/150px-Flag_of_Afghanistan_%282013%E2%80%932021%29.svg.png" alt=""> AFGHANISTAN</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Thrusday 19 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>MCA International Stadium, Pune</M>
+            <h3 class="thu">14:00 <c>THU 19 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/255px-Flag_of_India.svg.png" alt=""> INDIA</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/255px-Flag_of_Bangladesh.svg.png" alt=""> BANGLADESH</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Friday 20 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>M. Chinnaswamy Stadium, Bengaluru</M>
+            <h3 class="thu">14:00 <c>FRI 20 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/255px-Flag_of_Australia_%28converted%29.svg.png" alt=""> AUSTRALIA</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/255px-Flag_of_Pakistan.svg.png" alt=""> PAKISTAN</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Saturday 21 October</p>
+            <h3>10:30 <c>(YOUR TIME)</c> </h3>
+            <M>Ekana Cricket Stadium, Lucknow</M>
+            <h3 class="thu">10:30 <c>SAT 21 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/255px-Flag_of_the_Netherlands.svg.png" alt=""> NETHERLANDS</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/255px-Flag_of_Sri_Lanka.svg.png" alt=""> SRI LANKA</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Saturday 21 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>Wankhede Stadium, Mumbai</M>
+            <h3 class="thu">14:00 <c>SAT 21 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAFVBMVEX////OESTMAAXtuLvuvL/NABbhhYsTXF4iAAABiUlEQVR4nO3asQ3DMBAEQVqk1H/JdgcTPgTvVHDY+Naata8PXHt44rQSUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRHSc6Exv3KPOcyvR/ZzZjeuaxUK/RsMTlyf+uxJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkRdsKgjH01fLd9wBx3WqZhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiFyT6AlXQRZ39U6PdAAAAAElFTkSuQmCC" alt=""> ENGLAND</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/255px-Flag_of_South_Africa.svg.png" alt=""> SOUTH AFRICA</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Sunday 22 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>HPCA Stadium, Dharamsala</M>
+            <h3 class="thu">14:00 <c>SUN 22 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/255px-Flag_of_India.svg.png" alt=""> INDIA</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/NZ_flag_design_Silver_Fern_%28Black%2C_White_%26_Blue%29_by_Kyle_Lockwood.svg/180px-NZ_flag_design_Silver_Fern_%28Black%2C_White_%26_Blue%29_by_Kyle_Lockwood.svg.png" alt=""> NEW ZEALAND</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Monday 23 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>MA Chidambaram Stadium, Chennai</M>
+            <h3 class="thu">14:00 <c>MON 23 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/255px-Flag_of_Pakistan.svg.png" alt=""> PAKISTAN</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg/150px-Flag_of_Afghanistan_%282013%E2%80%932021%29.svg.png" alt=""> AFGHANISTAN</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Tuesday 24 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>Wankhede Stadium, Mumbai</M>
+            <h3 class="thu">14:00 <c>TUE 24 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/255px-Flag_of_South_Africa.svg.png" alt=""> SOUTH AFRICA</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/255px-Flag_of_Bangladesh.svg.png" alt=""> BANGLADESH</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Wednesday 25 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>Arun Jaitley Stadium, Delhi</M>
+            <h3 class="thu">14:00 <c>WED 25 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/255px-Flag_of_Australia_%28converted%29.svg.png" alt=""> AUSTRALIA</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/255px-Flag_of_the_Netherlands.svg.png" alt=""> NETHERLANDS</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Thrusday 26 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>M. Chinnaswamy Stadium, Bengaluru</M>
+            <h3 class="thu">14:00 <c>THU 26 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAFVBMVEX////OESTMAAXtuLvuvL/NABbhhYsTXF4iAAABiUlEQVR4nO3asQ3DMBAEQVqk1H/JdgcTPgTvVHDY+Naata8PXHt44rQSUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRHSc6Exv3KPOcyvR/ZzZjeuaxUK/RsMTlyf+uxJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkRdsKgjH01fLd9wBx3WqZhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiFyT6AlXQRZ39U6PdAAAAAElFTkSuQmCC" alt=""> ENGLAND</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/255px-Flag_of_Sri_Lanka.svg.png" alt=""> SRI LANKA</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Friday 27 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>MA Chidambaram Stadium, Chennai</M>
+            <h3 class="thu">14:00 <c>FRI 27 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/255px-Flag_of_Pakistan.svg.png" alt=""> PAKISTAN</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/255px-Flag_of_South_Africa.svg.png" alt=""> SOUTH AFRICA</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Saturday 28 October</p>
+            <h3>10:30 <c>(YOUR TIME)</c> </h3>
+            <M>HPCA Stadium, Dharamsala</M>
+            <h3 class="thu">10:30 <c>SAT 28 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/255px-Flag_of_Australia_%28converted%29.svg.png" alt=""> AUSTRALIA</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/NZ_flag_design_Silver_Fern_%28Black%2C_White_%26_Blue%29_by_Kyle_Lockwood.svg/180px-NZ_flag_design_Silver_Fern_%28Black%2C_White_%26_Blue%29_by_Kyle_Lockwood.svg.png" alt=""> NEW ZEALAND</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Saturday 28 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>Eden Gardens, Kolkata</M>
+            <h3 class="thu">14:00 <c>WED 28 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/255px-Flag_of_the_Netherlands.svg.png" alt=""> NETHERLANDS</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/255px-Flag_of_Bangladesh.svg.png" alt=""> BANGLADESH</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Sunday 29 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>Ekana Cricket Stadium, Lucknow</M>
+            <h3 class="thu">14:00 <c>SUN 29 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/255px-Flag_of_India.svg.png" alt=""> INDIA</h1>
+            <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAFVBMVEX////OESTMAAXtuLvuvL/NABbhhYsTXF4iAAABiUlEQVR4nO3asQ3DMBAEQVqk1H/JdgcTPgTvVHDY+Naata8PXHt44rQSUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRHSc6Exv3KPOcyvR/ZzZjeuaxUK/RsMTlyf+uxJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkRdsKgjH01fLd9wBx3WqZhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiFyT6AlXQRZ39U6PdAAAAAElFTkSuQmCC" alt=""> ENGLAND</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Monday 30 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>MCA International Stadium, Pune</M>
+            <h3 class="thu">14:00 <c>MON 30 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg/150px-Flag_of_Afghanistan_%282013%E2%80%932021%29.svg.png" alt=""> AFGHANISTAN</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/255px-Flag_of_Sri_Lanka.svg.png" alt=""> SRI LANKA</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Tuesday 31 October</p>
+            <h3>14:00 <c>(YOUR TIME)</c> </h3>
+            <M>Eden Gardens, Kolkata</M>
+            <h3 class="thu">14:00 <c>TUE 31 OCTOBER (LOCAL)</c> </h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/255px-Flag_of_Pakistan.svg.png" alt=""> PAKISTAN</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/255px-Flag_of_Bangladesh.svg.png" alt=""> BANGLADESH</h1>
+        </fieldset>
+
+        <div class="oct">
+            <h1 style="color: #ff00a5;">November <D style="color: #320073;">2023</D></h1>
+        </div>
+
+        <fieldset class="field">
+            <p>Wednesday 01 November</p>
+            <h3>14:00<C>(YOUR TIME)</C></h3>
+            <M>MCA International Stadium, Pune</M>
+            <h3 class="thu">14:00<C>WED 01 NOVEMBER (LOCAL)</C></h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/NZ_flag_design_Silver_Fern_%28Black%2C_White_%26_Blue%29_by_Kyle_Lockwood.svg/180px-NZ_flag_design_Silver_Fern_%28Black%2C_White_%26_Blue%29_by_Kyle_Lockwood.svg.png" alt=""> NEW ZEALAND</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/255px-Flag_of_South_Africa.svg.png" alt=""> SOUTH AFRICA</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Thrusday 02 November</p>
+            <h3>14:00<C>(YOUR TIME)</C></h3>
+            <M>Wankhede Stadium, Mumbai</M>
+            <h3 class="thu">14:00<C>THU 02 NOVEMBER (LOCAL)</C></h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/255px-Flag_of_India.svg.png" alt=""> INDIA</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/255px-Flag_of_Sri_Lanka.svg.png" alt=""> SRI LANKA</h1>
+        </fieldset>
+
+        <fieldset class="field">
+            <p>Friday 03 November</p>
+            <h3>14:00<C>(YOUR TIME)</C></h3>
+            <M>Ekana Cricket Stadium, Lucknow</M>
+            <h3 class="thu">14:00<C>FRI 03 NOVEMBER (LOCAL)</C></h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/255px-Flag_of_the_Netherlands.svg.png" alt=""> NETHERLANDS</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg/150px-Flag_of_Afghanistan_%282013%E2%80%932021%29.svg.png" alt=""> AFGHANISTAN</h1>
+        </fieldset>
+        
+        <fieldset class="field">
+            <p>Saturday 04 November</p>
+            <h3>10:30<C>(YOUR TIME)</C></h3>
+            <M>M. Chinnaswamy Stadium, Bengaluru</M>
+            <h3 class="thu">14:00<C>SAT 04 NOVEMBER (LOCAL)</C></h3>
+            <hr>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/NZ_flag_design_Silver_Fern_%28Black%2C_White_%26_Blue%29_by_Kyle_Lockwood.svg/180px-NZ_flag_design_Silver_Fern_%28Black%2C_White_%26_Blue%29_by_Kyle_Lockwood.svg.png" alt=""> NEW ZEALAND</h1>
+            <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/255px-Flag_of_Pakistan.svg.png" alt=""> PAKISTAN</h1>
+             </fieldset>
+
+            <fieldset class="field">
+                <p>Saturday 04 November</p>
+                <h3>14:00<C>(YOUR TIME)</C></h3>
+                <M>Narendra Modi Stadium, Ahmedabad</M>
+                <h3 class="thu">14:00<C>SAT 04 NOVEMBER (LOCAL)</C></h3>
+                <hr>
+                <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAFVBMVEX////OESTMAAXtuLvuvL/NABbhhYsTXF4iAAABiUlEQVR4nO3asQ3DMBAEQVqk1H/JdgcTPgTvVHDY+Naata8PXHt44rQSUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRHSc6Exv3KPOcyvR/ZzZjeuaxUK/RsMTlyf+uxJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkRdsKgjH01fLd9wBx3WqZhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiFyT6AlXQRZ39U6PdAAAAAElFTkSuQmCC" alt=""> ENGLAND</h1>
+                <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/255px-Flag_of_Australia_%28converted%29.svg.png" alt=""> AUSTRALIA</h1>
+       </fieldset>
+
+       <fieldset class="field">
+        <p>Sunday 05 November</p>
+        <h3>14:00<C>(YOUR TIME)</C></h3>
+        <M>Eden Gardens, Kolkata</M>
+        <h3 class="thu">14:00<C>SUN 05 NOVEMBER (LOCAL)</C></h3>
+        <hr>
+        <h1><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/255px-Flag_of_India.svg.png" alt=""> INDIA</h1>
+        <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/255px-Flag_of_South_Africa.svg.png" alt=""> SOUTH AFRICA</h1>
+    </fieldset>
+
+    <fieldset class="field">
+        <p>Monday 06 November</p>
+        <h3>14:00<C>(YOUR TIME)</C></h3>
+        <M>Arun Jaitley Stadium, Delhi</M>
+        <h3 class="thu">14:00<C>MON 06 NOVEMBER (LOCAL)</C></h3>
+        <hr>
+        <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/255px-Flag_of_Bangladesh.svg.png" alt=""> BANGLADESH</h1>
+        <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/255px-Flag_of_Sri_Lanka.svg.png" alt=""> SRI LANKA</h1>
+    </fieldset>
+
+    <fieldset class="field">
+        <p>Tuesday 07 November</p>
+        <h3>14:00<C>(YOUR TIME)</C></h3>
+        <M>Wankhede Stadium, Mumbai</M>
+        <h3 class="thu">14:00<C>TUE 07 NOVEMBER (LOCAL)</C></h3>
+        <hr>
+        <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/255px-Flag_of_Australia_%28converted%29.svg.png" alt=""> AUSTRALIA</h1>
+        <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg/150px-Flag_of_Afghanistan_%282013%E2%80%932021%29.svg.png" alt=""> AFGHANISTAN</h1>
+    </fieldset>
+
+    <fieldset class="field">
+        <p>Wednesday 08 November</p>
+        <h3>14:00<C>(YOUR TIME)</C></h3>
+        <M>MCA International Stadium, Pune</M>
+        <h3 class="thu">14:00<C>WED 08 NOVEMBER (LOCAL)</C></h3>
+        <hr>
+        <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAFVBMVEX////OESTMAAXtuLvuvL/NABbhhYsTXF4iAAABiUlEQVR4nO3asQ3DMBAEQVqk1H/JdgcTPgTvVHDY+Naata8PXHt44rQSUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRHSc6Exv3KPOcyvR/ZzZjeuaxUK/RsMTlyf+uxJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkRdsKgjH01fLd9wBx3WqZhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiFyT6AlXQRZ39U6PdAAAAAElFTkSuQmCC" alt=""> ENGLAND</h1>
+        <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/255px-Flag_of_the_Netherlands.svg.png" alt=""> NETHERLANDS</h1>
+    </fieldset>
+
+    <fieldset class="field">
+        <p>Thrusday 09 November</p>
+        <h3>14:00<C>(YOUR TIME)</C></h3>
+        <M>M. Chinnaswamy Stadium, Bengaluru</M>
+        <h3 class="thu">14:00<C>THU 09 NOVEMBER (LOCAL)</C></h3>
+        <hr>
+        <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/NZ_flag_design_Silver_Fern_%28Black%2C_White_%26_Blue%29_by_Kyle_Lockwood.svg/180px-NZ_flag_design_Silver_Fern_%28Black%2C_White_%26_Blue%29_by_Kyle_Lockwood.svg.png" alt=""> NEW ZEALAND</h1>
+        <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/255px-Flag_of_Sri_Lanka.svg.png" alt=""> SRI LANKA</h1>
+    </fieldset>
+
+    <fieldset class="field">
+        <p>Friday 10 November</p>
+        <h3>14:00<C>(YOUR TIME)</C></h3>
+        <M>Narendra Modi Stadium, Ahmedabad</M>
+        <h3 class="thu">14:00<C>FRI 10 NOVEMBER (LOCAL)</C></h3>
+        <hr>
+        <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/255px-Flag_of_South_Africa.svg.png" alt=""> SOUTH AFRICA</h1>
+        <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_Afghanistan_%282013%E2%80%932021%29.svg/150px-Flag_of_Afghanistan_%282013%E2%80%932021%29.svg.png" alt=""> AFGHANISTAN</h1>
+    </fieldset>
+
+    <fieldset class="field">
+        <p>Saturday 11 November</p>
+        <h3>10:30<C>(YOUR TIME)</C></h3>
+        <M>MCA International Stadium, Pune</M>
+        <h3 class="thu">10:30<C>SAT 11 NOVEMBER (LOCAL)</C></h3>
+        <hr>
+        <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/255px-Flag_of_Australia_%28converted%29.svg.png" alt=""> AUSTRALIA</h1>
+        <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/255px-Flag_of_Bangladesh.svg.png" alt=""> BANGLADESH</h1>
+    </fieldset>
+
+    <fieldset class="field">
+        <p>Saturday 11 November</p>
+        <h3>14:00<C>(YOUR TIME)</C></h3>
+        <M>Eden Gardens, Kolkata</M>
+        <h3 class="thu">14:00<C>SAT 11 NOVEMBER (LOCAL)</C></h3>
+        <hr>
+        <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAFVBMVEX////OESTMAAXtuLvuvL/NABbhhYsTXF4iAAABiUlEQVR4nO3asQ3DMBAEQVqk1H/JdgcTPgTvVHDY+Naata8PXHt44rQSUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRFQiKhGViEpEJaISUYmoRHSc6Exv3KPOcyvR/ZzZjeuaxUK/RsMTlyf+uxJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkQlohJRiahEVCIqEZWISkRdsKgjH01fLd9wBx3WqZhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiElGJqERUIioRlYhKRCWiFyT6AlXQRZ39U6PdAAAAAElFTkSuQmCC" alt=""> ENGLAND</h1>
+        <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Flag_of_Pakistan.svg/255px-Flag_of_Pakistan.svg.png" alt=""> PAKISTAN</h1>
+    </fieldset>
+
+    <fieldset class="field">
+        <p>Sunday 12 November</p>
+        <h3>14:00<C>(YOUR TIME)</C></h3>
+        <M>M. Chinnaswamy Stadium, Bengaluru</M>
+        <h3 class="thu">14:00<C>SUN 12 NOVEMBER (LOCAL)</C></h3>
+        <hr>
+        <h1><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/255px-Flag_of_India.svg.png" alt=""> INDIA</h1>
+        <h1><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/255px-Flag_of_the_Netherlands.svg.png" alt=""> NETHERLANDS</h1>
+    </fieldset>
+
+    <fieldset class="field">
+        <h2>SEMI-FINAL</h2>
+        <p>Wednesday 15 November</p>
+        <h3>14:00<C>(YOUR TIME)</C></h3>
+        <M>Wankhede Stadium, Mumbai</M>
+        <h3 class="thu">14:00<C>WED 15 NOVEMBER (LOCAL)</C></h3>
+        <hr>
+        <h1> 1ST PLACE</h1>
+        <h1> 4TH PLACE</h1>
+    </fieldset>
+
+    <fieldset class="field">
+        <h2>SEMI-FINAL</h2>
+        <p>Thrusday 16 November</p>
+        <h3>14:00<C>(YOUR TIME)</C></h3>
+        <M>Eden Gardens, Kolkata</M>
+        <h3 class="thu">14:00<C>THU 16 NOVEMBER (LOCAL)</C></h3>
+        <hr>
+        <h1> 2ND PLACE</h1>
+        <h1> 3RD PLACE</h1>
+    </fieldset>
+
+    <fieldset class="field">
+        <h2 style="background: gold;">FINAL</h2>
+        <p>Sunday 19 November</p>
+        <h3>14:00<C>(YOUR TIME)</C></h3>
+        <M>Narendra Modi Stadium, Ahmedabad</M>
+        <h3 class="thu">14:00<C>SUN 19 NOVEMBER (LOCAL)</C></h3>
+        <hr>
+        <h1> WINNER OF SEMI-FINAL 1 MEN</h1>
+        <h1> WINNER OF SEMI-FINAL 2 MEN</h1>
+    </fieldset>
+    </fieldset>
+
+</body>
+</html>

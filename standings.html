@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>standings</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header{
+            background: #ff00a5;
+            width: 100%;
+            height: 75px;
+            color: #fff;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .matches a{
+            color: #fff;
+            font-weight: 800;
+            font-family: serif;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .fixture{
+            background: #3528a8;
+            color: #fff;
+            font-size: 1.4rem;
+            padding: 15px;
+        }
+
+        .standings a{
+            color: #fff;
+            font-weight: 800;
+            font-family: serif;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .venue a{
+            color: #fff;
+            font-weight: 800;
+            font-family: serif;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .trophy-tour a{
+            color: #fff;
+            font-weight: 800;
+            font-family: serif;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .video a{
+            color: white;
+            text-decoration: none;
+            font-weight: 18px;
+            font-weight: 900;
+         }
+
+         h1{
+            color: #320073;
+            font-size: 25px;
+         }
+
+         h2{
+            color: #320073;
+            font-size: 3rem;
+            font-weight: 800;
+            padding-top: 60px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+         }
+
+         .table-box{
+            margin: 50px auto;
+         }
+
+         .table-row{
+            display: table;
+            width: 90%;
+            margin: 10px auto;
+            font-family: sans-serif;
+            background: #ff00a5;
+            font-weight: bold;
+            padding: 12px 0;
+            color: #ffffff;
+            font-size: 13px;
+            box-shadow: 0 1px 40px 0 rgba(255, 0, 221, 0.445);
+         }
+
+         .table-cell{
+            display: table-cell;
+            width: 10%;
+            text-align: center;
+            padding: 4px 0;
+            border-right: 1px solid #c5c3c3;
+            vertical-align: middle;
+         }
+
+         .last-cell{
+            border-right: none;
+         }
+
+         .partner{
+            text-align: center;
+            font-size: 17px;
+            color: #320073;
+            font-weight: bold;
+            padding-top: 10px;
+         }
+
+         .sponsar{
+            display: flex;
+            align-items: center;
+            padding-top: 10px;
+            justify-content: center;
+         }
+          a{
+            padding-right: 35px;
+          }
+
+          .polycab{
+            display: flex;
+            align-items: center;
+            padding-top: 50px;
+            justify-content: center;
+          }
+
+          .social{
+            padding-top: 70px;
+            text-align: center;
+            font-size: 17px;
+            color: #320073;
+            font-weight: bold;
+          }
+
+          .stand{
+            text-decoration: underline;
+          }
+
+          .media{
+            margin-top: 100px;
+            background: #320073;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 500px;
+          }
+
+          
+
+          h5{
+            margin-top: -190px;
+            font-size: 15px;
+            text-align: center;
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: bold;
+          }
+
+          .face i{
+            font-size: 30px;
+            margin-top: 25px;
+            color: #fff;
+            margin-right: -22px;
+          }
+
+          .book i:hover{
+            color: rgb(77, 77, 255);
+          }
+
+          .twitter i:hover{
+            color: skyblue;
+          }
+
+          .insta i:hover{
+            color: rgb(248, 117, 70);
+          }
+
+          .you i:hover{
+            color: red;
+          }
+
+          .bottom-bar{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: -280px;
+            color: #fff;
+          }
+
+          h4{
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: sans-serif;
+          }
+
+          .home p{
+            font-size: 19px;
+            font-weight: bold;
+            font-family: sans-serif;
+            padding-top: 10px;
+          }
+
+          .hub h4{
+            color: #fff;
+            padding-top: 10px;
+            font-size: 20px;
+          }
+
+          .all-news {
+            font-size: 19px;
+            font-weight: bold;
+            font-family: sans-serif;
+            padding-top: 10px;
+          }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="matches">
+        <a href="warm-up.html">WARM-UPS</a>
+        </div>
+
+        <div class="matches">
+        <a href="cwc.html">TOURNAMENTS</a>
+        </div>
+
+        <div class="video">
+            <i class="fa-brands fa-youtube"></i>
+            <a href="video.html">VIDEO</a>
+        </div>
+
+        <div class="standings stand">
+            <a href="standings.html">STANDINGS</a>
+        </div>
+
+        <div class="venue">
+            <a href="venue.html">VENUE</a>
+        </div>
+
+        <div class="trophy-tour">
+            <a href="top.html">TOP MOMENTS</a>
+        </div>
+
+        </div>
+
+    <div class="fixture">
+        <h1 style="color: white;">STANDINGS</h1>
+    </div>
+
+    <h2 style="color: #ff00a5;">GROUP <n style="color: #320073;">STAGE</n></h2>
+
+    <div class="table-box">
+        <div class="table-row">
+            <div class="table-cell ">
+                <p>POS</p>
+            </div>
+            <div class="table-cell">
+                <p>TEAM</p>
+            </div>
+            <div class="table-cell">
+                <p>PLAYED</p>
+            </div>
+            <div class="table-cell">
+                <p>WON</p>
+            </div>
+            <div class="table-cell">
+                <p>LOST</p>
+            </div>
+            <div class="table-cell">
+                <p>N/R</p>
+            </div>
+            <div class="table-cell">
+                <p>TIED</p>
+            </div>
+            <div class="table-cell">
+                <p>NET RR</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>POINTS</p>
+            </div>
+        </div>
+        <div class="table-row" style="background: white; color: #320073; ">
+            <div class="table-cell">
+                <p>1</p>
+            </div>
+            <div class="table-cell">
+                <p>AFGHANISTAN</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>+0.000</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="table-row" style="background: white; color: #320073;">
+            <div class="table-cell">
+                <p>2</p>
+            </div>
+            <div class="table-cell">
+                <p>AUSTRALIA</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>+0.000</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="table-row" style="background: white; color: #320073;">
+            <div class="table-cell">
+                <p>3</p>
+            </div>
+            <div class="table-cell">
+                <p>BANGLADESH</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>+0.000</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="table-row" style="background: white; color: #320073;">
+            <div class="table-cell">
+                <p>4</p>
+            </div>
+            <div class="table-cell">
+                <p>ENGLAND</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>+0.000</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="table-row" style="background: white; color: #320073; border: 0.1px solid #ff00a5;">
+            <div class="table-cell">
+                <p>5</p>
+            </div>
+            <div class="table-cell">
+                <p>INDIA</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>+0.000</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="table-row" style="background: white; color: #320073;">
+            <div class="table-cell">
+                <p>6</p>
+            </div>
+            <div class="table-cell">
+                <p>NETHERLANDS</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>+0.000</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="table-row" style="background: white; color: #320073;">
+            <div class="table-cell">
+                <p>7</p>
+            </div>
+            <div class="table-cell">
+                <p>NEW ZEALAND</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>+0.000</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="table-row" style="background: white; color: #320073;">
+            <div class="table-cell">
+                <p>8</p>
+            </div>
+            <div class="table-cell">
+                <p>PAKISTAN</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>+0.000</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="table-row" style="background: white; color: #320073;">
+            <div class="table-cell">
+                <p>9</p>
+            </div>
+            <div class="table-cell">
+                <p>SOUTH AFRICA</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>+0.000</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="table-row" style="background: white; color: #320073;">
+            <div class="table-cell">
+                <p>10</p>
+            </div>
+            <div class="table-cell">
+                <p>SRI LANKA</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>0</p>
+            </div>
+            <div class="table-cell">
+                <p>+0.000</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>0</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="partner">
+        <p>PARTNERS</p>
+    </div>
+
+    <div class="sponsar">
+        <a href="https://www.mrftyres.com"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/07/12/ec719b27-9cd2-4636-9085-646f0e07b2cf/mrf-tyres-1.svg" alt=""></a>
+        <a href="https://www.booking.com"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/07/12/7fc22d22-80a0-4d3b-9558-3565c55c7484/booking.com.svg" alt=""></a>
+        <a href="https://mastercard.com"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/08/22/08ba8e50-8bec-4276-814e-4404b2a54f1e/Mastercard.svg" alt=""></a>
+        <a href="https://www.aramco.com"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/07/12/e3a4013c-528f-453a-aed4-c173903ab85a/aramco.svg" alt=""></a>
+        <a href="https://www.emirates.com"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/07/12/3eb26b23-9379-486d-b7f1-bac9964227e3/Emirates.svg" alt=""></a>
+    </div>
+
+    <div class="polycab">
+        <a href="https://www.bira91.com"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/07/12/fe6fdb81-7f7a-4e11-9f1e-4ca6e86e3725/bira.svg" alt=""></a>
+        <a href="https://www.polycab.com"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/07/12/42de922b-c465-4fcf-96f7-de78d64161d0/Polycab.svg" alt=""></a>
+        <a href="https://www.coca-colaindia.com/brands/thums-up"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/07/12/d3b1bb64-ab36-4854-bfd2-f64a8c2e7666/taste-thunder.svg" alt=""></a>
+        <a href="https://www.upstox.com"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/07/12/833df06e-044b-41ca-b12c-7d9253d739ae/upstox.svg" alt=""></a>
+        <a href="https://www.nissanusa.com"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/07/12/ed63da22-3993-42d5-b7dc-04f38a06cb97/Nissan.svg" alt=""></a>
+        <a href="https://www.nium.com"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/08/22/88acf48e-0ced-4324-b134-7ac9c92a1ac0/nium.svg" alt=""></a>
+        <a href="https://www.oppo.com"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/07/12/3d6ed547-c19a-4f1a-af39-a52584abc047/oppo.svg" alt=""></a>
+        <a href="https://www.dpworld.com"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/07/12/f3708644-216c-4c1e-ba67-5bd914828203/DP-WORLD.svg" alt=""></a>
+    </div>
+
+    <div class="polycab">
+        <a href="https://www.pernod-ricard.com"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/07/12/20133b4a-993f-4e67-852b-6131dcf1ba2d/ROYAL-STAG.svg" alt=""></a>
+        <a href="https://www.dream11.com"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/07/12/1abec0a2-1a5d-4b5e-ac74-0602346aa030/dream11.svg" alt=""></a>
+        <a href="https://www.jacobscreek.com"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/07/12/07706b78-1a05-489b-b5dd-13ed927c35f9/JACOBS-CREEK_LIGHT-1.svg" alt=""></a>
+        <a href="https://www.fancraze.com"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/07/12/5268904a-473d-47a0-85bf-d8d254732c2f/fancraze.svg" alt=""></a>
+        <a href="https://www.tyka.com"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/07/12/1acd014c-f607-4635-bb47-80b47393f2d1/tyka.svg" alt=""></a>
+    </div>
+
+    <div class="social">
+        <p>SOCIAL RESPONSIBILITY BROADCAST PARTNER</p>
+    </div>
+
+    <div class="polycab" style="padding-top: 10px;">
+        <a href="https://www.icc-cricket.com/about/the-icc/cricket-for-good"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/07/12/5e358a3f-5b8d-4e31-901e-4b49a6c2bd9a/cricket4good.svg" alt=""></a>
+        <a href="https://www.hotstar.com"><img src="https://resources.pulse.icc-cricket.com/ICC/document/2023/07/12/9a95a5a6-0271-4175-a9e4-0cf6f87e0646/starsports.svg" alt=""></a>
+    </div>
+
+    <div class="media">
+        <div class="follow">
+            <h5>FOLLOW US ON SOCIAL</h5>
+            <div class="face">
+                <a href="https://www.facebook.com/cricketworldcup/" class="book"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/cricketworldcup" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https:www.instagram.com/cricketworldcup/" class="insta"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/user/cricketICC" class="you"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        </div>
+
+        <div class="bottom-bar">
+            <div class="cup">
+                <h4>CRICKET WORLD CUP</h4>
+                <div class="home">
+                    <p class="home">Homepage</p>
+                </div>
+            </div>
+
+            <div class="hub">
+                <h4>NEWS & VIDEOS</h4>
+                <div class="all-news">
+                    <p class="all-news">All News</p>
+                    <p class="video-hub">Video Hub</p>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
